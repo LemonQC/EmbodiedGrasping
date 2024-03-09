@@ -27,8 +27,8 @@
                 <div class="post-list">
     
     <div class="post">
-        <!-- <a class="post-title" href="/EmbodiedGrasping/2024/02/28/paper/">Think Before Execute: Embodied Reasoning of Supportive Tools for Zero-shot Tasks with Large Language Models</a> -->
-        <div class="post-title" >Think Before Execute: Embodied Reasoning of Supportive Tools for Zero-shot Tasks with Large Language Models</div>
+        <!-- <a class="post-title" href="/EmbodiedGrasping/2024/03/09/paper/">Think Before Execute: Embodied Reasoning of Supportive Tools for Robot Service with Large Language Models</a> -->
+        <div class="post-title" >Think Before Execute: Embodied Reasoning of Supportive Tools for Robot Service with Large Language Models</div>
         <div class="post-authors" >Jin Liu, Jialong Xie, Leibing Xiao, Chaoqun Wang, Fengyu Zhou</div>
         <div class="post-affiliations" >Shandong University</div>
         <div class="head-icon"> 
@@ -36,7 +36,7 @@
             
 
             
-                <a class="icon-container" target="_blank" rel="noopener" href="https://youtu.be/Noku3oZtu4o">
+                <a class="icon-container" target="_blank" rel="noopener" href="https://youtu.be/n6-7WZhReqE">
                     <i class="fa fa-youtube-square"></i>
                 </a>
             
@@ -44,14 +44,14 @@
         </div>
         <div class="line"></div>
         <div class="post-abstract-title">Abstract</div>
-        <div class="post-abstract" >Embodied reasoning is an important ability for robots to handle the zero-shot tasks in our everyday services, wherein detailed execution instructions are not provided for the tasks. It allows robots to have the ability to plan tasks, and more importantly, to analyze their own abilities and exploit supportive tools in the scene to better complete their tasks. In this paper, we leverage the language comprehension capabilities of Large language models (LLMs) for semantic parsing, making them the central hub for zero-shot task decision-making and execution. In specific, instead of directly generating the task plans by feeding the prompts to LLMs, we incorporate the robot's skills and the current scene graph knowledge to analyze the human intentions and task feasibility. During the task execution process, we develop an embodied judgment module for robots based on LLMs to conduct its task executable analysis in the current scene, ensuring that the robot can rely on its own abilities or utilize reasonable tools to complete tasks. Additionally, the robot updates the scene knowledge graph to enhance the accuracy and efficiency of subsequent executions after completing each task. Extensive experiments conducted in various real-world scenes demonstrate the effectiveness and generalization of our proposed framework.</div>
+        <div class="post-abstract" >The utilization of appropriate tools can significantly streamline task complexity and expand the boundaries of robot capabilities, indicating a high level of intelligence. Finding a useful tool is a non-trivial problem when the robot is confronted with complex tasks lacking detailed execution instructions. In this paper, we investigate the problem of robotic task execution in response to human verbal requests. Motivated by the development of Large language models (LLMs), we propose a robotic embodied reasoning framework conditioned on LLMs. It enables robots to rely on their physical manipulation system or exploit supportive tools in the scene to effectively complete their tasks. To this end, the environment knowledge about objects is modeled using a scene graph. More specifically, by utilizing the onsite knowledge in the scene graph and the general knowledge in LLMs, we develop an embodied evaluation module to conduct task executable analysis considering the robot's abilities and the associated objects in the environment. Then a series of execution sequences are generated to drive the robot to fruitfully finish the task. Extensive experiments conducted in various real-world scenes demonstrate the effectiveness and generalization of our proposed framework.</div>
         
         
             <div class="video-container">
                 <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/Noku3oZtu4o"
+                src="https://www.youtube.com/embed/n6-7WZhReqE"
                 frameborder="0"
                 allowfullscreen
                 ></iframe>
@@ -59,14 +59,14 @@
         
         <div class="post-except">
             <h2 id="Overview-of-framework"><a href="#Overview-of-framework" class="headerlink" title="Overview of framework"></a>Overview of framework</h2><p>Architecture of the overall framework. LLMs play important role in three modules, namely language comprehension module, embodied constraint judgement module, and tool utilization module. Conditioned on the retrieved scene graph knowledge and its own skills (including manipulation skills and movement skills), the robot first conduct the semantic analysis of human intention and task feasibility using LLMs. Once the robot reaches the target position, it assesses its capabilities and physical parameters to ascertain if it can accomplish the task autonomously without the need for tools. When tools are required, the robot utilizes a scene knowledge graph to search for appropriate tools and accomplish the given task. After the task is completed, the robot will proceed to update the current scene graph to facilitate the execution of subsequent tasks..<br><img src="/EmbodiedGrasping/./images/overall.jpg" alt="listen-perceive-grasp paradigm"></p>
-<h2 id="Other-qualitative-results-in-real-world-scene"><a href="#Other-qualitative-results-in-real-world-scene" class="headerlink" title="Other qualitative results in real-world scene"></a>Other qualitative results in real-world scene</h2><h3 id="Pouring-soy-sauce"><a href="#Pouring-soy-sauce" class="headerlink" title="Pouring soy sauce"></a>Pouring soy sauce</h3><html><div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/riViZrUvzyo?si=oXIfTdbQqQwZhQbU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></html>
+<h2 id="Other-qualitative-results-in-real-world-scene"><a href="#Other-qualitative-results-in-real-world-scene" class="headerlink" title="Other qualitative results in real-world scene"></a>Other qualitative results in real-world scene</h2><h3 id="Pouring-soy-sauce"><a href="#Pouring-soy-sauce" class="headerlink" title="Pouring soy sauce"></a>Pouring soy sauce</h3><html><div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/5PwC3_gG3VE?si=34JTztkL0bVOXSdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></html>
 
-<h3 id="Grasping-one-apple"><a href="#Grasping-one-apple" class="headerlink" title="Grasping one apple"></a>Grasping one apple</h3><html><div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/2tUjCtWA0Io?si=-j9FixJnygn9g-vf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></html>
+<h3 id="Grasping-one-apple"><a href="#Grasping-one-apple" class="headerlink" title="Grasping one apple"></a>Grasping one apple</h3><html><div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/lZrcBwITxSA?si=xdsC-_XpR9hEmjbn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></html>
 
 
-            <!-- <a class="read-more" href="/EmbodiedGrasping/2024/02/28/paper/"> ... </a> -->
+            <!-- <a class="read-more" href="/EmbodiedGrasping/2024/03/09/paper/"> ... </a> -->
         </div>
-        <div class="post-date">2024.02.28</div>
+        <div class="post-date">2024.03.09</div>
     </div>
     
 </div>
